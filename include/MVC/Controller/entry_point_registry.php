@@ -70,5 +70,7 @@ $entry_point_registry = array(
     'getYUIComboFile' => array('file' => 'include/javascript/getYUIComboFile.php', 'auth' => false),
     'UploadFileCheck' => array('file' => 'modules/Configurator/UploadFileCheck.php', 'auth' => true),
     'SAML'=>  array('file' => 'modules/Users/authentication/SAMLAuthenticate/index.php', 'auth' => false),
+	'TinyMCESpellChecker' => array( 'file' => 'include/javascript/tiny_mce/plugins/spellchecker/rpc.php', 'auth' => false),
+ );
 );
 ?>

@@ -94,7 +94,6 @@ class SugarTinyMCE {
 		'elements'	=> '',
         'extended_valid_elements' => 'style[dir|lang|media|title|type],hr[class|width|size|noshade],@[class|style]',
         'content_css' => 'include/javascript/tiny_mce/themes/advanced/skins/default/content.css',
-
 	);
 	
 	
@@ -131,7 +130,10 @@ class SugarTinyMCE {
 		$config['theme_advanced_buttons1'] = $this->buttonConfigs['default']['buttonConfig']; 
 		$config['theme_advanced_buttons2'] = $this->buttonConfigs['default']['buttonConfig2']; 
 		$config['theme_advanced_buttons3'] = $this->buttonConfigs['default']['buttonConfig3'];
+		
+		$config['spellchecker_rpc_url'] = "index.php?entryPoint=TinyMCESpellChecker";
 
+		
 		$jsConfig = $json->encode($config);
 		
 		$instantiateCall = '';
